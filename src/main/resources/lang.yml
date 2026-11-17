@@ -1,0 +1,156 @@
+prefix: "<gradient:#7f5af0:#2cb67d><bold>Улучшения</bold></gradient> <dark_gray>»</dark_gray>"
+
+word:
+  enabled: "<green>Да</green>"
+  disabled: "<red>Нет</red>"
+
+command:
+  description: "Меню улучшения предметов"
+  player-only: "<prefix> <red>Эта команда доступна только игрокам."
+  loading: "<prefix> <yellow>Рецепты ещё загружаются, попробуйте через пару секунд."
+  reloaded: "<prefix> <green>Конфигурация, сообщения и рецепты перезагружены."
+  reload-failed: "<prefix> <red>Не удалось перезагрузить рецепты, подробности в консоли."
+  no-players: "<prefix> <red>Игроки не найдены."
+  enzymes-given: "<prefix> <green>Выдано <white><amount></white> ферментов улучшения игроку <white><player></white>."
+  enzymes-received: "<prefix> <green>Вы получили <white><amount></white> ферментов улучшения."
+
+upgrade:
+  no-item: "<prefix> <red>Положите предмет для улучшения в центральный слот."
+  no-recipe: "<prefix> <red>Для этого предмета нет доступного улучшения."
+  extra-mismatch: "<prefix> <red>Дополнительные слоты принимают только такие же предметы, как улучшаемый."
+  no-economy: "<prefix> <red>Экономика недоступна, обратитесь к администратору."
+  not-enough-coins: "<prefix> <red>Недостаточно монеток. Нужно: <white><need></white>."
+  not-enough-enzymes: "<prefix> <red>Недостаточно ферментов улучшения. Нужно: <white><need></white>, у вас: <white><have></white>."
+  payment-failed: "<prefix> <red>Не удалось списать монетки, попробуйте ещё раз."
+  success: "<prefix> <green>Улучшение удалось! Вы получили <white><result></white><green>. Шанс был <white><chance>%</white>."
+  failure-lost: "<prefix> <red>Улучшение не удалось, предмет утерян. Шанс был <white><chance>%</white>."
+  failure-kept: "<prefix> <yellow>Улучшение не удалось, но предмет сохранён. Шанс был <white><chance>%</white>."
+
+enzyme:
+  name: "<gradient:#ff6b6b:#feca57>Фермент улучшения</gradient>"
+  lore:
+    - "<gray>Используется для улучшения предметов"
+    - "<gray>в меню <white>/upgrade</white>"
+
+menu:
+  upgrade:
+    title: "<dark_gray>Улучшение предметов"
+    confirm-name: "<green><bold>Улучшить"
+    confirm-lore:
+      - "<gray>Нажмите, чтобы попытаться"
+      - "<gray>улучшить предмет"
+    close-name: "<red><bold>Закрыть"
+    result-empty-name: "<gray>Результат"
+    result-empty-lore:
+      - "<dark_gray>Здесь появится улучшенный предмет"
+    result-none-name: "<red>Улучшение недоступно"
+    result-none-lore:
+      - "<gray>Для этого предмета нет рецепта"
+    info-idle-name: "<yellow>Как улучшить"
+    info-idle-lore:
+      - "<gray>Положите предмет в слот слева"
+      - "<gray>Добавьте до <white>5</white> таких же предметов,"
+      - "<gray>чтобы повысить шанс успеха"
+    info-name: "<yellow>Информация об улучшении"
+    info-lore:
+      - ""
+      - "<gray>Цена: <gold><coins></gold>"
+      - "<gray>Ферменты улучшения: <aqua><enzymes></aqua>"
+      - ""
+      - "<gray>Базовый шанс: <white><base-chance>%</white>"
+      - "<gray>Доп. предметы: <white><extras></white><dark_gray>/</dark_gray><white><max-extras></white> <dark_gray>(+<bonus>% за каждый)</dark_gray>"
+      - "<gray>Итоговый шанс: <green><chance>%</green>"
+      - "<gray>Потеря при неудаче: <lose>"
+  list:
+    title: "<dark_gray>Рецепты улучшений <gray>(<page>/<pages>)"
+    prev-name: "<yellow>Предыдущая страница"
+    next-name: "<yellow>Следующая страница"
+    close-name: "<red>Закрыть"
+    create-name: "<green><bold>Создать рецепт"
+    create-lore:
+      - "<gray>Откроет редактор нового рецепта"
+    recipe-lore:
+      - "<dark_gray>ID: <id>"
+      - ""
+      - "<gray>Результат: <white><result></white> <dark_gray>x<amount>"
+      - "<gray>Цена: <gold><coins></gold>"
+      - "<gray>Ферменты: <aqua><enzymes></aqua>"
+      - "<gray>Шанс: <white><chance>%</white> <dark_gray>(+<bonus>% за доп. предмет)"
+      - "<gray>Потеря при неудаче: <lose>"
+      - "<gray>Строгое сравнение: <strict>"
+      - ""
+      - "<yellow>ЛКМ <gray>— редактировать"
+      - "<red>Shift + ПКМ <gray>— удалить"
+  editor:
+    title-new: "<dark_gray>Новый рецепт"
+    title-edit: "<dark_gray>Рецепт <id>"
+    input-label-name: "<yellow>Исходный предмет"
+    input-label-lore:
+      - "<gray>Возьмите предмет курсором и нажмите"
+      - "<gray>на слот ниже, либо Shift + клик по предмету"
+      - "<gray>в своём инвентаре. Пустой клик очищает слот"
+    result-label-name: "<yellow>Результат улучшения"
+    result-label-lore:
+      - "<gray>Количество результата равно размеру"
+      - "<gray>стака, который вы положили"
+    input-empty-name: "<gray>Исходный предмет не выбран"
+    input-empty-lore:
+      - "<dark_gray>Нажмите с предметом на курсоре"
+    result-empty-name: "<gray>Результат не выбран"
+    result-empty-lore:
+      - "<dark_gray>Нажмите с предметом на курсоре"
+    arrow-name: "<gray>→"
+    coins-name: "<gold>Цена в монетках"
+    coins-lore:
+      - "<gray>Текущее значение: <white><value></white>"
+      - ""
+      - "<yellow>ЛКМ <gray>— <green>+<step></green>"
+      - "<yellow>ПКМ <gray>— <red>-<step></red>"
+      - "<yellow>Shift <gray>— в <white><multiplier></white> раз больше"
+    enzymes-name: "<aqua>Цена в ферментах улучшения"
+    enzymes-lore:
+      - "<gray>Текущее значение: <white><value></white>"
+      - ""
+      - "<yellow>ЛКМ <gray>— <green>+<step></green>"
+      - "<yellow>ПКМ <gray>— <red>-<step></red>"
+      - "<yellow>Shift <gray>— в <white><multiplier></white> раз больше"
+    chance-name: "<green>Базовый шанс успеха"
+    chance-lore:
+      - "<gray>Текущее значение: <white><value>%</white>"
+      - ""
+      - "<yellow>ЛКМ <gray>— <green>+<step>%</green>"
+      - "<yellow>ПКМ <gray>— <red>-<step>%</red>"
+      - "<yellow>Shift <gray>— в <white><multiplier></white> раз больше"
+    bonus-name: "<light_purple>Бонус за доп. предмет"
+    bonus-lore:
+      - "<gray>Текущее значение: <white><value>%</white>"
+      - ""
+      - "<yellow>ЛКМ <gray>— <green>+<step>%</green>"
+      - "<yellow>ПКМ <gray>— <red>-<step>%</red>"
+      - "<yellow>Shift <gray>— в <white><multiplier></white> раз больше"
+    lose-name: "<red>Потеря предмета при неудаче"
+    lose-lore:
+      - "<gray>Сейчас: <state>"
+      - ""
+      - "<yellow>Нажмите, чтобы переключить"
+    strict-name: "<white>Строгое сравнение предмета"
+    strict-lore:
+      - "<gray>Сейчас: <state>"
+      - "<dark_gray>Да — учитываются название, лор и зачарования"
+      - "<dark_gray>Нет — сравнивается только материал"
+      - ""
+      - "<yellow>Нажмите, чтобы переключить"
+    save-name: "<green><bold>Сохранить рецепт"
+    save-lore:
+      - "<gray>Нужны исходный предмет и результат"
+    back-name: "<yellow>Назад к списку"
+    back-lore:
+      - "<gray>Несохранённые изменения будут потеряны"
+    delete-name: "<red><bold>Удалить рецепт"
+    delete-lore:
+      - "<gray>Рецепт будет удалён безвозвратно"
+
+editor:
+  incomplete: "<prefix> <red>Выберите исходный предмет и результат улучшения."
+  saved: "<prefix> <green>Рецепт <white><id></white> сохранён."
+  deleted: "<prefix> <yellow>Рецепт <white><id></white> удалён."

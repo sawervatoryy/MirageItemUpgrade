@@ -1,0 +1,66 @@
+# MirageItemUpgrade | Авторы: sawervatoryy, ivivvl | MirageStudio: https://discord.gg/ttBpCuWUW2
+
+# Расположение слотов в меню /upgrade (размер меню 54 слота, нумерация с 0)
+menu:
+  # Слот, куда игрок кладёт улучшаемый предмет
+  item-slot: 20
+  # Слот предпросмотра результата
+  result-slot: 24
+  # Слот с информацией о стоимости и шансе
+  info-slot: 22
+  # Кнопка подтверждения улучшения
+  confirm-slot: 49
+  # Кнопка закрытия меню
+  close-slot: 53
+  # Слоты для дополнительных одинаковых предметов (не более 5 штук)
+  extra-slots: [38, 39, 40, 41, 42]
+  # Материал заполнителя
+  filler: BLACK_STAINED_GLASS_PANE
+
+# Ферменты улучшения — предмет, который списывается из инвентаря игрока
+enzymes:
+  material: PRISMARINE_SHARD
+  glow: true
+
+# Шаг изменения значений в редакторе рецептов.
+# ЛКМ — прибавить шаг, ПКМ — отнять шаг, Shift — шаг умножается на shift-multiplier
+editor:
+  coin-step: 100
+  enzyme-step: 1
+  chance-step: 1
+  bonus-step: 1
+  shift-multiplier: 10
+
+# Значения по умолчанию для нового рецепта
+recipe-defaults:
+  # Цена в монетках (Vault / Essentials)
+  coins: 1000
+  # Цена в ферментах улучшения
+  enzymes: 5
+  # Базовый шанс успеха в процентах
+  chance: 50
+  # Прибавка к шансу за каждый дополнительный одинаковый предмет, в процентах
+  bonus-per-extra: 10
+  # Теряется ли основной предмет при неудаче
+  lose-on-fail: true
+  # Строгое сравнение предмета (название, лор, зачарования). false — сравнивается только материал
+  strict: true
+
+# Звуки: ключ звука Minecraft, громкость, высота
+sounds:
+  success:
+    sound: entity.player.levelup
+    volume: 1.0
+    pitch: 1.0
+  failure:
+    sound: entity.item.break
+    volume: 1.0
+    pitch: 0.8
+  error:
+    sound: entity.villager.no
+    volume: 1.0
+    pitch: 1.0
+  click:
+    sound: ui.button.click
+    volume: 0.7
+    pitch: 1.2

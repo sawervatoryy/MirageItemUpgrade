@@ -1,0 +1,17 @@
+name: MirageItemUpgrade
+version: '${project.version}'
+main: org.github.sawervatoryy.mirageItemUpgrade.MirageItemUpgrade
+api-version: '1.21.4'
+load: POSTWORLD
+description: Улучшение предметов за монетки и ферменты улучшения
+authors: [sawervatoryy, ivivvl]
+website: https://discord.gg/ttBpCuWUW2
+depend: [Vault]
+softdepend: [Essentials, PlaceholderAPI]
+permissions:
+  mirageitemupgrade.use:
+    description: Доступ к меню улучшений
+    default: true
+  mirageitemupgrade.admin:
+    description: Редактор рецептов, перезагрузка и выдача ферментов улучшения
+    default: op
