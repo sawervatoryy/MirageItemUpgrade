@@ -2,7 +2,11 @@
 
 Плагин улучшения предметов для **Paper 1.21.4+** (Java 22). Игрок кладёт предмет в особое меню `/upgrade`, платит монетками и ферментами улучшения и с некоторым шансом получает предмет уровнем выше. Рецепты улучшений создаются прямо в игре через встроенный GUI-редактор.
 
-**Авторы:** sawervatoryy, ivivvl
+![Paper](https://img.shields.io/badge/Paper-1.21.4-00ACFF?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-21-FF7B00?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-0.1-00B0F2?style=for-the-badge)
+![Studio](https://img.shields.io/badge/MirageStudio-sawervatoryy-8A2BE2?style=for-the-badge)
+
 **MirageStudio:** https://discord.gg/ttBpCuWUW2
 
 ---
